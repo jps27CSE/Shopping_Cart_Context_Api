@@ -1,8 +1,18 @@
+import { Link } from "react-router-dom";
+import "./styles.css";
+
 const Header = () => {
   return (
     <div>
-      Hello world <p>lorem ipsum dolor sit amet, consect</p>
-      Hello world <p>lorem ipsum dolor sit amet, consect</p>
+      <span className="header">React Context API</span>
+      <ul className="nav">
+        <li className="prod">
+          <Link to="/">Home Page</Link>
+        </li>
+        <li className="prod1">
+          <Link to="/cart">Cart </Link>
+        </li>
+      </ul>
     </div>
   );
 };
